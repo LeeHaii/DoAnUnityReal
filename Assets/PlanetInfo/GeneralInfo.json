@@ -1,11 +1,11 @@
-{
-    "planets": [
+    [
       {
         "name": "Mercury",
         "mass": 3.3011e23,
         "radius": 2439.7,
         "distanceFromSun": 57.91e6,
         "orbitalPeriod": 88,
+        "fact": "Mercury is the smallest planet in our solar system, and the nearest to the Sun.",
         "color": "#bbbbbb"
       },
       {
@@ -14,6 +14,7 @@
         "radius": 6051.8,
         "distanceFromSun": 108.2e6,
         "orbitalPeriod": 225,
+        "fact": "Venus is the second planet from the Sun, and Earth's closest planetary neighbor.",
         "color": "#e5d3be"
       },
       {
@@ -22,6 +23,7 @@
         "radius": 6371,
         "distanceFromSun": 149.6e6,
         "orbitalPeriod": 365.25,
+        "fact": "Earth – our home planet – is the third planet from the Sun, and the fifth largest planet.",
         "color": "#2a5fba"
       },
       {
@@ -30,6 +32,7 @@
         "radius": 3389.5,
         "distanceFromSun": 227.9e6,
         "orbitalPeriod": 687,
+        "fact": "Mars – the fourth planet from the Sun – is a dusty, cold, desert world with a very thin atmosphere.",
         "color": "#b54c39"
       },
       {
@@ -38,6 +41,7 @@
         "radius": 69911,
         "distanceFromSun": 778.5e6,
         "orbitalPeriod": 4331,
+        "fact": "Jupiter is the largest planet in our solar system – if it were a hollow shell, 1,000 Earths could fit inside.",
         "color": "#d9b48f"
       },
       {
@@ -46,6 +50,7 @@
         "radius": 58232,
         "distanceFromSun": 1.429e9,
         "orbitalPeriod": 10747,
+        "fact": "Saturn is the sixth planet from the Sun, the second-largest planet in our solar system.",
         "color": "#f7e3a2"
       },
       {
@@ -54,6 +59,7 @@
         "radius": 25362,
         "distanceFromSun": 2.871e9,
         "orbitalPeriod": 30589,
+        "fact": "The seventh planet from the Sun, Uranus has the third largest diameter of planets in our solar system.",
         "color": "#7db4dc"
       },
       {
@@ -62,7 +68,7 @@
         "radius": 24622,
         "distanceFromSun": 4.495e9,
         "orbitalPeriod": 59800,
+        "fact": "Neptune is the eighth and most distant planet in our solar system.",
         "color": "#426ab3"
       }
     ]
-  }
