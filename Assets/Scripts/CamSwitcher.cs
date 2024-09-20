@@ -2,38 +2,87 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
+using UnityEngine.InputSystem;
 
 public class CamSwitcher : MonoBehaviour
 {
-    public XROrigin main;
-    public XROrigin secondary;
+    public List<XROrigin> PlanetList;
+    public XROrigin mainRig;
 
-    private bool isOnMain;
-    // Start is called before the first frame update
     void Start()
     {
-        isOnMain = true;
-        if (main != null && secondary != null)
+        if (PlanetList != null && PlanetList.Count > 0 && mainRig != null)
         {
-            main.gameObject.SetActive(true);
-            secondary.gameObject.SetActive(false);
+            for (int i = 0; i < PlanetList.Count; i++)
+            {
+                if (PlanetList[i] == null)
+                {
+                    Debug.LogError("XROrigin at index " + i + " is null!");
+                    return;
+                }
+                PlanetList[i].gameObject.SetActive(false);
+            }
+            mainRig.gameObject.SetActive(true);
+            //ActivateRig(mainRig);
         }
         else
         {
-            Debug.Log("hasnt assigned");
+            Debug.LogError("PlanetList is either null or empty!");
         }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void SwitchToPlanet(int index)
     {
+        if (index >= 0 && index < PlanetList.Count)
+        {
+            // Disable all XR rigs first
+            for (int i = 0; i < PlanetList.Count; i++)
+            {
+                if (PlanetList[i] != null)
+                {
+                    PlanetList[i].gameObject.SetActive(false);
+                }
+            }
+            mainRig.gameObject.SetActive(false);
+            ActivateRig(PlanetList[index]);
+        }
+        else
+        {
+            Debug.LogError("Invalid planet index: " + index);
+        }
+    }
+
+
+    private void ActivateRig(XROrigin rig)
+    {
+        if (rig != null)
+        {
+            rig.gameObject.SetActive(true);
+
+            // Ensure the camera in the XR rig is active
+            Camera camera = rig.GetComponentInChildren<Camera>();
+            if (camera != null)
+            {
+                camera.enabled = true;
+            }
+            
+        }
+        else
+        {
+            Debug.LogError("Tried to activate a null XROrigin!");
+        }
         
     }
 
-    public void SwitchPlanet()
+    public void ReturnToMain()
     {
-        isOnMain = !isOnMain;
-        main.gameObject.SetActive(isOnMain);
-        secondary.gameObject.SetActive(!isOnMain);
+        for(int i = 0; i < PlanetList.Count; i++)
+        {
+            PlanetList[i].gameObject.SetActive(false);
+        }
+        ActivateRig(mainRig);
     }
 }
