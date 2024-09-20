@@ -866,6 +866,7 @@ GameObject:
   - component: {fileID: 28193667}
   - component: {fileID: 28193669}
   - component: {fileID: 28193668}
+  - component: {fileID: 28193670}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -937,6 +938,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28193666}
   m_CullTransparentMesh: 1
+--- !u!114 &28193670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28193666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 1383691683}
+  planetMass: {fileID: 1046471716}
+  planetRadius: {fileID: 860184530}
+  planetDistanceFromSun: {fileID: 1365337924}
+  planetOrbitalPeriod: {fileID: 504083905}
 --- !u!1 &30204374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39053389}
   m_Layer: 0
-  m_Name: UI Jupiter
+  m_Name: UI Neptune
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1475,7 +1493,7 @@ GameObject:
   - component: {fileID: 64393535}
   - component: {fileID: 64393534}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Neptune
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1865,7 +1883,7 @@ GameObject:
   - component: {fileID: 102861225}
   - component: {fileID: 102861224}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Saturn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3088,7 +3106,7 @@ GameObject:
   - component: {fileID: 119227972}
   - component: {fileID: 119227971}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Mercury
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5315,6 +5333,7 @@ GameObject:
   - component: {fileID: 320284812}
   - component: {fileID: 320284814}
   - component: {fileID: 320284813}
+  - component: {fileID: 320284815}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -5386,6 +5405,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320284811}
   m_CullTransparentMesh: 1
+--- !u!114 &320284815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320284811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 587455183}
+  planetMass: {fileID: 1625494211}
+  planetRadius: {fileID: 1150385439}
+  planetDistanceFromSun: {fileID: 1535473066}
+  planetOrbitalPeriod: {fileID: 295359919}
 --- !u!1 &337803530
 GameObject:
   m_ObjectHideFlags: 0
@@ -7487,6 +7523,7 @@ GameObject:
   - component: {fileID: 416687137}
   - component: {fileID: 416687139}
   - component: {fileID: 416687138}
+  - component: {fileID: 416687140}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -7558,6 +7595,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416687136}
   m_CullTransparentMesh: 1
+--- !u!114 &416687140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416687136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 1777400919}
+  planetMass: {fileID: 1497829132}
+  planetRadius: {fileID: 2127328997}
+  planetDistanceFromSun: {fileID: 1919696898}
+  planetOrbitalPeriod: {fileID: 1156662796}
 --- !u!1 &427969456
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,7 +8585,7 @@ GameObject:
   - component: {fileID: 449777654}
   - component: {fileID: 449777653}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8600,7 +8654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 449777654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &449777654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10186,6 +10252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetName: {fileID: 1076535214}
+  planetMass: {fileID: 1448281450}
+  planetRadius: {fileID: 2105374474}
+  planetDistanceFromSun: {fileID: 174650298}
+  planetOrbitalPeriod: {fileID: 535293997}
 --- !u!1 &504083903
 GameObject:
   m_ObjectHideFlags: 0
@@ -13098,7 +13169,7 @@ GameObject:
   - component: {fileID: 670174314}
   - component: {fileID: 670174313}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13167,7 +13238,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 670174314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &670174314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13419,7 +13502,7 @@ GameObject:
   - component: {fileID: 728331432}
   - component: {fileID: 728331431}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15531,7 +15614,7 @@ GameObject:
   - component: {fileID: 895017431}
   - component: {fileID: 895017430}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Mars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15831,7 +15914,7 @@ GameObject:
   - component: {fileID: 913913609}
   - component: {fileID: 913913608}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15900,7 +15983,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 913913609}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &913913609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17470,6 +17565,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018305422}
   m_CullTransparentMesh: 1
+--- !u!1001 &1030610810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_Name
+      value: XR Device Simulator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
 --- !u!1 &1043095468
 GameObject:
   m_ObjectHideFlags: 0
@@ -19042,7 +19194,7 @@ GameObject:
   - component: {fileID: 1117540288}
   - component: {fileID: 1117540287}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Jupiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19591,7 +19743,7 @@ GameObject:
   - component: {fileID: 1138061759}
   - component: {fileID: 1138061758}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19660,7 +19812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1138061759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1138061759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24036,7 +24200,7 @@ GameObject:
   - component: {fileID: 1385276854}
   - component: {fileID: 1385276853}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24105,7 +24269,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1385276854}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1385276854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25391,7 +25567,7 @@ GameObject:
   - component: {fileID: 1445181694}
   - component: {fileID: 1445181693}
   m_Layer: 0
-  m_Name: Button
+  m_Name: to Uranus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33179,7 +33355,7 @@ GameObject:
   - component: {fileID: 1759594567}
   - component: {fileID: 1759594566}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33248,7 +33424,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1759594567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1759594567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35950,6 +36138,7 @@ GameObject:
   - component: {fileID: 1839599708}
   - component: {fileID: 1839599710}
   - component: {fileID: 1839599709}
+  - component: {fileID: 1839599711}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -36021,6 +36210,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839599707}
   m_CullTransparentMesh: 1
+--- !u!114 &1839599711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839599707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 541971234}
+  planetMass: {fileID: 552511454}
+  planetRadius: {fileID: 745480148}
+  planetDistanceFromSun: {fileID: 1690812928}
+  planetOrbitalPeriod: {fileID: 1523967446}
 --- !u!1 &1840475605
 GameObject:
   m_ObjectHideFlags: 0
@@ -36168,7 +36374,7 @@ GameObject:
   - component: {fileID: 1840924442}
   - component: {fileID: 1840924441}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36237,7 +36443,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1840924442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1840924442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39996,7 +40214,7 @@ GameObject:
   - component: {fileID: 1988472325}
   - component: {fileID: 1988472324}
   m_Layer: 0
-  m_Name: Button
+  m_Name: To Venus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40317,7 +40535,7 @@ GameObject:
   - component: {fileID: 2027565720}
   - component: {fileID: 2027565719}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40386,7 +40604,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2027565720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476680891}
+        m_TargetAssemblyTypeName: CamSwitcher, Assembly-CSharp
+        m_MethodName: ReturnToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2027565720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41109,6 +41339,7 @@ GameObject:
   - component: {fileID: 2068557381}
   - component: {fileID: 2068557383}
   - component: {fileID: 2068557382}
+  - component: {fileID: 2068557385}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -41180,6 +41411,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068557380}
   m_CullTransparentMesh: 1
+--- !u!114 &2068557385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068557380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 834609864}
+  planetMass: {fileID: 1848488873}
+  planetRadius: {fileID: 2107979512}
+  planetDistanceFromSun: {fileID: 792594554}
+  planetOrbitalPeriod: {fileID: 736752989}
 --- !u!1 &2079111152
 GameObject:
   m_ObjectHideFlags: 0
@@ -41191,6 +41439,7 @@ GameObject:
   - component: {fileID: 2079111153}
   - component: {fileID: 2079111155}
   - component: {fileID: 2079111154}
+  - component: {fileID: 2079111156}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -41262,6 +41511,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079111152}
   m_CullTransparentMesh: 1
+--- !u!114 &2079111156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079111152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 2036672953}
+  planetMass: {fileID: 397897412}
+  planetRadius: {fileID: 1379348425}
+  planetDistanceFromSun: {fileID: 1124595348}
+  planetOrbitalPeriod: {fileID: 53006597}
 --- !u!1 &2101480235
 GameObject:
   m_ObjectHideFlags: 0
@@ -41675,6 +41941,7 @@ GameObject:
   - component: {fileID: 2119259173}
   - component: {fileID: 2119259175}
   - component: {fileID: 2119259174}
+  - component: {fileID: 2119259176}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -41746,6 +42013,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119259172}
   m_CullTransparentMesh: 1
+--- !u!114 &2119259176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119259172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetName: {fileID: 1239983394}
+  planetMass: {fileID: 475265129}
+  planetRadius: {fileID: 1162730681}
+  planetDistanceFromSun: {fileID: 1995281998}
+  planetOrbitalPeriod: {fileID: 1298946455}
 --- !u!114 &2123409231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43124,3 +43408,4 @@ SceneRoots:
   - {fileID: 476680892}
   - {fileID: 1985614020}
   - {fileID: 905154127}
+  - {fileID: 1030610810}

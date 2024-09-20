@@ -28,27 +28,57 @@ public class ShowGeneralInfo : MonoBehaviour
     private string color;
     private string jsonPath = File.ReadAllText("./Assets/PlanetInfo/GeneralInfo.json");
 
+    public TextMeshProUGUI planetName;
+    public TextMeshProUGUI planetMass;
+    public TextMeshProUGUI planetRadius;
+    public TextMeshProUGUI planetDistanceFromSun;
+    public TextMeshProUGUI planetOrbitalPeriod;
+
+    private Color planetColor;
+
+    private List<Planet> planetData;
+    private CamSwitcher getPassIndex;
+    
+
     void Start()
     {
+        getPassIndex = GameObject.Find("CamSwitch").GetComponent<CamSwitcher>();
         var deserialize = JsonConvert.DeserializeObject<JObject>(jsonPath);
         var data = deserialize.Value<JArray>("planets").ToObject<List<Planet>>();
-        Debug.Log(data[0].ten);
-        Debug.Log(data[0].mass);
-        Debug.Log(data[0].radius);
-        Debug.Log(data[0].distanceFromSun);
-        Debug.Log(data[0].orbitalPeriod);
-        Debug.Log(data[0].color);
+        planetData = data;
+        Debug.Log(getPassIndex.PassIndex.ToString());
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        SetPlanetText();
     }
 
     public void SetPlanetText()
     {
+        if (planetData != null)
+        {
+            planetName.text = planetData[getPassIndex.PassIndex].ten;
+            planetMass.text = planetData[getPassIndex.PassIndex].mass.ToString() + "kg";
+            planetRadius.text = planetData[getPassIndex.PassIndex].radius.ToString() + "km";
+            planetDistanceFromSun.text = planetData[getPassIndex.PassIndex].distanceFromSun.ToString() + "km";
+            planetOrbitalPeriod.text = planetData[getPassIndex.PassIndex].orbitalPeriod.ToString() + " Earth days";
 
+            ColorUtility.TryParseHtmlString(planetData[getPassIndex.PassIndex].color, out planetColor);
+            planetName.color = planetColor;
+            planetMass.color = planetColor;
+            planetRadius.color = planetColor;
+            planetDistanceFromSun.color = planetColor;
+            planetOrbitalPeriod.color = planetColor;
+
+            Debug.Log(planetData[getPassIndex.PassIndex].ten);
+            Debug.Log(planetData[getPassIndex.PassIndex].mass.ToString());
+            Debug.Log(planetData[getPassIndex.PassIndex].radius.ToString());
+            Debug.Log(planetData[getPassIndex.PassIndex].distanceFromSun.ToString());
+            Debug.Log(planetData[getPassIndex.PassIndex].orbitalPeriod.ToString());
+
+        }
     }
     
 }

@@ -11,6 +11,8 @@ public class CamSwitcher : MonoBehaviour
     public List<XROrigin> PlanetList;
     public XROrigin mainRig;
 
+    public int PassIndex { get; set; }
+
     void Start()
     {
         if (PlanetList != null && PlanetList.Count > 0 && mainRig != null)
@@ -26,6 +28,7 @@ public class CamSwitcher : MonoBehaviour
             }
             mainRig.gameObject.SetActive(true);
             //ActivateRig(mainRig);
+            PassIndex = 0;
         }
         else
         {
@@ -48,6 +51,7 @@ public class CamSwitcher : MonoBehaviour
             }
             mainRig.gameObject.SetActive(false);
             ActivateRig(PlanetList[index]);
+            PassIndex = index;
         }
         else
         {
