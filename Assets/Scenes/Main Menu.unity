@@ -9328,55 +9328,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
---- !u!1 &458284925
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 458284927}
-  - component: {fileID: 458284926}
-  m_Layer: 0
-  m_Name: JsonPGeneralHolder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &458284926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458284925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planetName: {fileID: 0}
-  planetMass: {fileID: 0}
-  dFS: {fileID: 0}
-  orbitalPeriod: {fileID: 0}
-  textColor: 
---- !u!4 &458284927
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458284925}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -386.68353, y: -110.465454, z: 121.98773}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465548597
 GameObject:
   m_ObjectHideFlags: 0
@@ -10151,6 +10102,7 @@ GameObject:
   - component: {fileID: 492777483}
   - component: {fileID: 492777485}
   - component: {fileID: 492777484}
+  - component: {fileID: 492777486}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -10222,6 +10174,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492777482}
   m_CullTransparentMesh: 1
+--- !u!114 &492777486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492777482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617310b7748be3041b3999f00c82df4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504083903
 GameObject:
   m_ObjectHideFlags: 0
@@ -15809,6 +15773,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901763914}
   m_CullTransparentMesh: 1
+--- !u!1 &905154125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905154127}
+  - component: {fileID: 905154128}
+  m_Layer: 0
+  m_Name: JsonHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905154127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905154125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -78.309166, y: 13.427025, z: -4.4363403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905154128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905154125}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaeebf4eced165449a0bdf5c7e74dcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonPath: D:\DoAnUnityReal\Assets\PlanetInfo
 --- !u!1 &913913606
 GameObject:
   m_ObjectHideFlags: 0
@@ -43114,4 +43123,4 @@ SceneRoots:
   - {fileID: 1658770268}
   - {fileID: 476680892}
   - {fileID: 1985614020}
-  - {fileID: 458284927}
+  - {fileID: 905154127}

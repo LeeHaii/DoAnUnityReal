@@ -2,37 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using SimpleJSON;
-using Palmmedia.ReportGenerator.Core.Common;
 using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Linq;
+
 
 public class ShowGeneralInfo : MonoBehaviour
 {
-    private class Planet
+    public class Planet
     {
-        public string planetName;
-        public long planetMass;
-        public float planetRaidus;
-        public double dFS;
+        public string ten;
+        public double mass;
+        public float radius;
+        public double distanceFromSun;
         public float orbitalPeriod;
+        public string color;
     }
 
-    [Header("Attributes")]
-    [SerializeField]
-    private TMP_Text planetName;
-    [SerializeField]
-    private TMP_Text planetMass;
-    [SerializeField]
-    private TMP_Text dFS;
-    [SerializeField]
-    private TMP_Text orbitalPeriod;
-    [SerializeField]
-    private string textColor;
-    private string jsonPath = File.ReadAllText("./../PlanetInfo/GeneralInfo.json");
+    private string ten;
+    private double mass;
+    private float radius;
+    private double distanceFromSun;
+    private float orbitalPeriod;
+    private string color;
+    private string jsonPath = File.ReadAllText("./Assets/PlanetInfo/GeneralInfo.json");
 
     void Start()
     {
-        List<Planet> planets = JsonSerializer.Deserialize<List<Planet>>(jsonPath);
+        var deserialize = JsonConvert.DeserializeObject<JObject>(jsonPath);
+        var data = deserialize.Value<JArray>("planets").ToObject<List<Planet>>();
+        Debug.Log(data[0].ten);
+        Debug.Log(data[0].mass);
+        Debug.Log(data[0].radius);
+        Debug.Log(data[0].distanceFromSun);
+        Debug.Log(data[0].orbitalPeriod);
+        Debug.Log(data[0].color);
     }
 
     // Update is called once per frame
@@ -40,10 +45,7 @@ public class ShowGeneralInfo : MonoBehaviour
     {
 
     }
-    public void GetJsonData()
-    {
-        print("Get Json Data");
-    }
+
     public void SetPlanetText()
     {
 

@@ -1,6 +1,7 @@
-    [
+  {
+    "planets": [
       {
-        "name": "Mercury",
+        "ten": "#bbbbbb",
         "mass": 3.3011e23,
         "radius": 2439.7,
         "distanceFromSun": 57.91e6,
@@ -9,7 +10,7 @@
         "color": "#bbbbbb"
       },
       {
-        "name": "Venus",
+        "ten": "Venus",
         "mass": 4.8675e24,
         "radius": 6051.8,
         "distanceFromSun": 108.2e6,
@@ -18,7 +19,7 @@
         "color": "#e5d3be"
       },
       {
-        "name": "Earth",
+        "ten": "Earth",
         "mass": 5.972e24,
         "radius": 6371,
         "distanceFromSun": 149.6e6,
@@ -27,7 +28,7 @@
         "color": "#2a5fba"
       },
       {
-        "name": "Mars",
+        "ten": "Mars",
         "mass": 6.4171e23,
         "radius": 3389.5,
         "distanceFromSun": 227.9e6,
@@ -36,7 +37,7 @@
         "color": "#b54c39"
       },
       {
-        "name": "Jupiter",
+        "ten": "Jupiter",
         "mass": 1.898e27,
         "radius": 69911,
         "distanceFromSun": 778.5e6,
@@ -45,7 +46,7 @@
         "color": "#d9b48f"
       },
       {
-        "name": "Saturn",
+        "ten": "Saturn",
         "mass": 5.683e26,
         "radius": 58232,
         "distanceFromSun": 1.429e9,
@@ -54,7 +55,7 @@
         "color": "#f7e3a2"
       },
       {
-        "name": "Uranus",
+        "ten": "Uranus",
         "mass": 8.681e25,
         "radius": 25362,
         "distanceFromSun": 2.871e9,
@@ -63,7 +64,7 @@
         "color": "#7db4dc"
       },
       {
-        "name": "Neptune",
+        "ten": "Neptune",
         "mass": 1.024e26,
         "radius": 24622,
         "distanceFromSun": 4.495e9,
@@ -72,3 +73,4 @@
         "color": "#426ab3"
       }
     ]
+  }
