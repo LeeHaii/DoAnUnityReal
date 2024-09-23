@@ -46,4 +46,10 @@ public class OrbitalVisualizer : MonoBehaviour
         isVisible = !isVisible;
         lineRenderer.enabled = isVisible;
     }
+
+    public void TurnOffVisibility()
+    {
+        isVisible = false;
+        lineRenderer.enabled = isVisible;
+    }
 }

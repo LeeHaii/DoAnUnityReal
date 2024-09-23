@@ -14,4 +14,12 @@ public class OrbitToggle : MonoBehaviour
             visualizer.ToggleOrbitVisibility();
         }
     }
+
+    public void TurnOffOrbitToggle()
+    {
+        foreach(var visualizer in orbitVisualizers)
+        {
+            visualizer.TurnOffVisibility();
+        }
+    }
 }

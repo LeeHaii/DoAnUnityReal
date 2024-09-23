@@ -20,12 +20,12 @@ public class ShowGeneralInfo : MonoBehaviour
         public string color;
     }
 
-    private string ten;
+    /* private string ten;
     private double mass;
     private float radius;
     private double distanceFromSun;
     private float orbitalPeriod;
-    private string color;
+    private string color; */ 
     private string jsonPath = File.ReadAllText("./Assets/PlanetInfo/GeneralInfo.json");
 
     public TextMeshProUGUI planetName;

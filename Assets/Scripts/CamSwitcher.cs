@@ -10,6 +10,7 @@ public class CamSwitcher : MonoBehaviour
 {
     public List<XROrigin> PlanetList;
     public XROrigin mainRig;
+    [SerializeField] private OrbitToggle orbitToggle;
 
     public int PassIndex { get; set; }
 
@@ -52,6 +53,7 @@ public class CamSwitcher : MonoBehaviour
             mainRig.gameObject.SetActive(false);
             ActivateRig(PlanetList[index]);
             PassIndex = index;
+            orbitToggle.TurnOffOrbitToggle();
         }
         else
         {
@@ -72,7 +74,7 @@ public class CamSwitcher : MonoBehaviour
             {
                 camera.enabled = true;
             }
-            
+
         }
         else
         {
