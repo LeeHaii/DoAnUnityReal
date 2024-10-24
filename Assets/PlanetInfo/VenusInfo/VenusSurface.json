@@ -1,0 +1,21 @@
+{
+    "VenusSurface": {
+        "name": "Venus",
+        "radius_km": 6051.8,
+        "mass_kg": 4.8675e24,
+        "surface_composition": [
+            "Basalt",
+            "Silicates"
+        ],
+        "surface_pressure_pascals": 9200000,
+        "terrain": [
+            "Volcanic plains",
+            "Highlands",
+            "Craters"
+        ],
+        "albedo": 0.65,
+        "day_length_hours": 5832.5,
+        "year_length_days": 224.7,
+        "supports_life": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "UranusClimate": {
+        "average_surface_temperature_celsius": -195,
+        "max_surface_temperature_celsius": -182,
+        "min_surface_temperature_celsius": -224,
+        "wind_activity": "moderate",
+        "weather_patterns": "storms",
+        "thermal_inertia": "low",
+        "seasons": "extreme",
+        "axial_tilt_degrees": 97.8,
+        "heat_distribution": "limited internal heat and solar radiation",
+        "polar_temperature": {
+            "min_celsius": -224,
+            "max_celsius": -182
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "MercurySurface": {
+      "name": "Mercury",
+      "radius_km": 2439.7,
+      "mass_kg": 3.3011e23,
+      "surface_composition": [
+        "Silicates",
+        "Iron",
+        "Nickel"
+      ],
+      "surface_pressure_pascals": 0,
+      "terrain": [
+        "Cratered plains",
+        "Ridges",
+        "Highlands"
+      ],
+      
+      "albedo": 0.12,
+      "day_length_hours": 4222.6,
+      "year_length_days": 87.97,
+      "supports_life": false,
+      "surface_gravity_m_s2": 3.7,  
+      "crust_thickness_km": 35,     
+      "surface_age_billion_years": 4.0,  
+      "volcanic_activity": "none",  
+      "tectonic_activity": "extinct" 
+      
+    }
+  }

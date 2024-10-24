@@ -1,0 +1,17 @@
+{
+    "NeptuneClimate": {
+        "average_surface_temperature_celsius": -201,
+        "max_surface_temperature_celsius": -182,
+        "min_surface_temperature_celsius": -218,
+        "wind_activity": "extreme",
+        "weather_patterns": "storms, Great Dark Spot",
+        "thermal_inertia": "low",
+        "seasons": "yes",
+        "axial_tilt_degrees": 28.32,
+        "heat_distribution": "internal heat and solar radiation",
+        "polar_temperature": {
+            "min_celsius": -218,
+            "max_celsius": -182
+        }
+    }
+}

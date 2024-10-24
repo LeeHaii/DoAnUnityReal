@@ -1,0 +1,22 @@
+{
+    "EarthSurface": {
+        "name": "Earth",
+        "radius_km": 6371,
+        "mass_kg": 5.972e24,
+        "surface_composition": [
+            "Silicates",
+            "Iron",
+            "Water"
+        ],
+        "surface_pressure_pascals": 101325,
+        "terrain": [
+            "Oceans",
+            "Mountains",
+            "Plains"
+        ],
+        "albedo": 0.30,
+        "day_length_hours": 24,
+        "year_length_days": 365.25,
+        "supports_life": true
+    }
+}

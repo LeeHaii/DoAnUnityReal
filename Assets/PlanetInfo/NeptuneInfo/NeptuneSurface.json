@@ -1,0 +1,21 @@
+{
+    "NeptuneSurface": {
+        "name": "Neptune",
+        "radius_km": 24622,
+        "mass_kg": 1.024e26,
+        "surface_composition": [
+            "Hydrogen",
+            "Helium",
+            "Ices"
+        ],
+        "surface_pressure_pascals": 1e6,
+        "terrain": [
+            "Gas giant",
+            "Ice giant"
+        ],
+        "albedo": 0.41,
+        "day_length_hours": 16.1,
+        "year_length_days": 60190,
+        "supports_life": false
+    }
+}

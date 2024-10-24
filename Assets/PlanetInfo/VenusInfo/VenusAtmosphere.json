@@ -1,0 +1,9 @@
+{
+    "VenusAtmosphere": {
+        "atmosphere_composition": [
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Sulfur Dioxide"
+        ]
+    }
+}

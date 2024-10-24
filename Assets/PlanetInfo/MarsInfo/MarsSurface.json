@@ -1,0 +1,21 @@
+{
+    "MarsSurface": {
+        "name": "Mars",
+        "radius_km": 3389.5,
+        "mass_kg": 6.4171e23,
+        "surface_composition": [
+            "Iron Oxide",
+            "Basalt"
+        ],
+        "surface_pressure_pascals": 610,
+        "terrain": [
+            "Volcanic plains",
+            "Canyons",
+            "Craters"
+        ],
+        "albedo": 0.25,
+        "day_length_hours": 24.6,
+        "year_length_days": 687,
+        "supports_life": false
+    }
+}

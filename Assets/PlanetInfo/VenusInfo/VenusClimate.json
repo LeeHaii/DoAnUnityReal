@@ -1,0 +1,17 @@
+{
+    "VenusClimate": {
+        "average_surface_temperature_celsius": 464,
+        "max_surface_temperature_celsius": 467,
+        "min_surface_temperature_celsius": 462,
+        "wind_activity": "strong",
+        "weather_patterns": "acid rain",
+        "thermal_inertia": "low",
+        "seasons": "none",
+        "axial_tilt_degrees": 177.4,
+        "heat_distribution": "global due to thick atmosphere",
+        "polar_temperature": {
+            "min_celsius": 462,
+            "max_celsius": 467
+        }
+    }
+}

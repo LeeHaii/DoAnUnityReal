@@ -1,0 +1,17 @@
+{
+    "EarthClimate": {
+        "average_surface_temperature_celsius": 15,
+        "max_surface_temperature_celsius": 58,
+        "min_surface_temperature_celsius": -89,
+        "wind_activity": "varied",
+        "weather_patterns": "rain, snow, storms",
+        "thermal_inertia": "moderate",
+        "seasons": "yes",
+        "axial_tilt_degrees": 23.5,
+        "heat_distribution": "ocean currents and atmosphere",
+        "polar_temperature": {
+            "min_celsius": -60,
+            "max_celsius": 0
+        }
+    }
+}

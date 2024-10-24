@@ -1,0 +1,17 @@
+{
+    "MercuryClimate": {
+        "average_surface_temperature_celsius": 167,
+        "max_surface_temperature_celsius": 427,
+        "min_surface_temperature_celsius": -173,
+        "wind_activity": "none",  
+        "weather_patterns": "none",  
+        "thermal_inertia": "low",  
+        "seasons": "none",  
+        "axial_tilt_degrees": 0.034,  
+        "heat_distribution": "direct solar radiation",  
+        "polar_temperature": {
+            "min_celsius": -173,
+            "max_celsius": -110
+        }
+    }
+}

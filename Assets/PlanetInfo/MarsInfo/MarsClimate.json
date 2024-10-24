@@ -1,0 +1,17 @@
+{
+    "MarsClimate": {
+        "average_surface_temperature_celsius": -60,
+        "max_surface_temperature_celsius": 20,
+        "min_surface_temperature_celsius": -140,
+        "wind_activity": "moderate",
+        "weather_patterns": "dust storms",
+        "thermal_inertia": "low",
+        "seasons": "yes",
+        "axial_tilt_degrees": 25.2,
+        "heat_distribution": "direct solar radiation",
+        "polar_temperature": {
+            "min_celsius": -140,
+            "max_celsius": -60
+        }
+    }
+}

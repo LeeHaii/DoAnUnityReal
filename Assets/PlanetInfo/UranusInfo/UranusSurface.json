@@ -1,0 +1,21 @@
+{
+    "UranusSurface": {
+        "name": "Uranus",
+        "radius_km": 25362,
+        "mass_kg": 8.681e25,
+        "surface_composition": [
+            "Hydrogen",
+            "Helium",
+            "Ices"
+        ],
+        "surface_pressure_pascals": 1e6,
+        "terrain": [
+            "Gas giant",
+            "Ice giant"
+        ],
+        "albedo": 0.51,
+        "day_length_hours": 17.2,
+        "year_length_days": 30687,
+        "supports_life": false
+    }
+}

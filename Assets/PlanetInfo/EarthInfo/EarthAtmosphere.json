@@ -1,0 +1,10 @@
+{
+    "EarthAtmosphere": {
+        "atmosphere_composition": [
+            "Nitrogen",
+            "Oxygen",
+            "Argon",
+            "Carbon Dioxide"
+        ]
+    }
+}

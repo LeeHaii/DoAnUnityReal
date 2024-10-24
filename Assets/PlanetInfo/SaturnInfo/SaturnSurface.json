@@ -1,0 +1,20 @@
+{
+    "SaturnSurface": {
+        "name": "Saturn",
+        "radius_km": 58232,
+        "mass_kg": 5.683e26,
+        "surface_composition": [
+            "Hydrogen",
+            "Helium"
+        ],
+        "surface_pressure_pascals": 1e6,
+        "terrain": [
+            "Gas giant",
+            "Rings"
+        ],
+        "albedo": 0.47,
+        "day_length_hours": 10.7,
+        "year_length_days": 10759,
+        "supports_life": false
+    }
+}

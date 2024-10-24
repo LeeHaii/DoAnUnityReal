@@ -1,0 +1,17 @@
+{
+    "SaturnClimate": {
+        "average_surface_temperature_celsius": -139,
+        "max_surface_temperature_celsius": -130,
+        "min_surface_temperature_celsius": -178,
+        "wind_activity": "extreme",
+        "weather_patterns": "storms, hexagonal storm at the north pole",
+        "thermal_inertia": "moderate",
+        "seasons": "yes",
+        "axial_tilt_degrees": 26.7,
+        "heat_distribution": "internal heat and solar radiation",
+        "polar_temperature": {
+            "min_celsius": -178,
+            "max_celsius": -130
+        }
+    }
+}

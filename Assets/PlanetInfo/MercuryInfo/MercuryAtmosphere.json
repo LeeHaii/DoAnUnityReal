@@ -1,0 +1,11 @@
+{
+    "MercuryAtmosphere": {
+        "atmosphere_composition": [
+        "Oxygen",
+        "Sodium",
+        "Hydrogen",
+        "Helium",
+        "Potassium"
+      ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "JupiterAtmosphere": {
+        "atmosphere_composition": [
+            "Hydrogen",
+            "Helium",
+            "Methane"
+        ]
+    }
+}

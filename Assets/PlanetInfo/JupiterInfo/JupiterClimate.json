@@ -1,0 +1,17 @@
+{
+    "JupiterClimate": {
+        "average_surface_temperature_celsius": -108,
+        "max_surface_temperature_celsius": -100,
+        "min_surface_temperature_celsius": -145,
+        "wind_activity": "extreme",
+        "weather_patterns": "storms, Great Red Spot",
+        "thermal_inertia": "moderate",
+        "seasons": "none",
+        "axial_tilt_degrees": 3.13,
+        "heat_distribution": "internal heat and solar radiation",
+        "polar_temperature": {
+            "min_celsius": -120,
+            "max_celsius": -108
+        }
+    }
+}

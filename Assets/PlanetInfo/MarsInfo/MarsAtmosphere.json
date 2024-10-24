@@ -1,0 +1,9 @@
+{
+    "MarsAtmosphere": {
+        "atmosphere_composition": [
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Argon"
+        ]
+    }
+}
