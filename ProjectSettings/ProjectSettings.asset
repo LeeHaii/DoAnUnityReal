@@ -741,9 +741,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;FG_GCSR
+    EmbeddedLinux: FG_GCSR
+    GameCoreScarlett: FG_GCSR
+    GameCoreXboxOne: FG_GCSR
+    LinuxHeadlessSimulation: FG_GCSR
+    Nintendo Switch: FG_GCSR
+    PS4: FG_GCSR
+    PS5: FG_GCSR
+    QNX: FG_GCSR
+    Stadia: FG_GCSR
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;FG_GCSR
+    VisionOS: FG_GCSR
+    WebGL: FG_GCSR
+    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;FG_GCSR
+    XboxOne: FG_GCSR
+    iPhone: FG_GCSR
+    tvOS: FG_GCSR
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
